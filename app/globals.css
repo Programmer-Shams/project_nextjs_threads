@@ -7,7 +7,7 @@
   .main-container {
     @apply flex min-h-screen flex-1 flex-col items-center bg-dark-1 px-6 pb-10 pt-28 max-md:pb-32 sm:px-10;
   }
-
+ 
   /* Head Text */
   .head-text {
     @apply text-heading2-bold text-light-1;
@@ -15,7 +15,7 @@
 
   /* Activity */
   .activity-card {
-    @apply flex items-center gap-2 rounded-md bg-dark-2 px-7 py-4;
+    @apply flex items-center gap-2 rounded-md bg-[#EFF3F4] px-5 py-2;
   }
 
   /* No Result */
@@ -25,7 +25,7 @@
 
   /* Community Card */
   .community-card {
-    @apply w-full rounded-lg bg-dark-3 px-4 py-5 sm:w-96;
+    @apply w-full rounded-lg bg-[#EFF3F4] shadow-sm px-4 py-5 sm:w-96;
   }
 
   .community-card_btn {
@@ -34,7 +34,7 @@
 
   /* thread card  */
   .thread-card_bar {
-    @apply relative mt-2 w-0.5 grow rounded-full bg-neutral-800;
+    @apply relative mt-2 w-0.5 grow rounded-full bg-[#c4c3c3];
   }
 
   /* User card */
@@ -51,19 +51,19 @@
   }
 
   .searchbar {
-    @apply flex gap-1 rounded-lg bg-dark-3 px-4 py-2;
+    @apply flex gap-1 rounded-lg px-4 py-2;
   }
 
   .searchbar_input {
-    @apply border-none bg-dark-3 text-base-regular text-light-4 outline-none !important;
+    @apply border-none text-base-regular text-light-4 outline-none !important;
   }
 
   .topbar {
-    @apply fixed top-0 z-30 flex w-full items-center justify-between bg-dark-2 px-6 py-3;
+    @apply fixed top-0 z-30 flex w-full items-center justify-between bg-[#EFF3F4] px-6 py-3;
   }
 
   .bottombar {
-    @apply fixed bottom-0 z-10 w-full rounded-t-3xl bg-glassmorphism p-4 backdrop-blur-lg xs:px-7 md:hidden;
+    @apply fixed bottom-0 z-10 w-full rounded-t-3xl bg-[#EFF3F4] p-4 backdrop-blur-lg xs:px-7 md:hidden;
   }
 
   .bottombar_container {
@@ -75,11 +75,11 @@
   }
 
   .leftsidebar {
-    @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto border-r border-r-dark-4 bg-dark-2 pb-5 pt-28 max-md:hidden;
+    @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto border-r border-r-[#DBDBDB] bg-dark-2 pb-5 pt-28 max-md:hidden;
   }
 
   .leftsidebar_link {
-    @apply relative flex justify-start gap-4 rounded-lg p-4;
+    @apply relative flex justify-start gap-4 rounded-lg p-4 font-semibold;
   }
 
   .pagination {
@@ -87,7 +87,7 @@
   }
 
   .rightsidebar {
-    @apply sticky right-0 top-0 z-20 flex h-screen w-fit flex-col justify-between gap-12 overflow-auto border-l border-l-dark-4 bg-dark-2 px-10 pb-6 pt-28 max-xl:hidden;
+    @apply sticky right-0 top-0 z-20 flex h-screen w-fit flex-col justify-between gap-12 overflow-auto border-l border-l-[#DBDBDB]  bg-dark-2 px-10 pb-6 pt-28 max-xl:hidden;
   }
 }
 
@@ -101,7 +101,9 @@
     height: 3px;
     border-radius: 2px;
   }
-
+  .class {
+    color: black;
+  }
   .custom-scrollbar::-webkit-scrollbar-track {
     background: #09090a;
   }
@@ -118,7 +120,7 @@
 
 /* Clerk Responsive fix */
 .cl-organizationSwitcherTrigger .cl-userPreview .cl-userPreviewTextContainer {
-  @apply max-sm:hidden;
+  @apply max-sm:hidden text-white;
 }
 
 .cl-organizationSwitcherTrigger
@@ -131,7 +133,7 @@
 
 /* Tab */
 .tab {
-  @apply flex min-h-[50px] flex-1 items-center gap-3 bg-dark-2 text-light-2 data-[state=active]:bg-[#0e0e12] data-[state=active]:text-light-2 !important;
+  @apply flex min-h-[50px] flex-1 items-center gap-3  data-[state=active]:bg-[#d6d8d9] !important;
 }
 
 .no-focus {
@@ -148,12 +150,12 @@
 }
 
 .account-form_input {
-  @apply border border-dark-4 bg-dark-3 text-light-1 !important;
+  @apply border bg-[#EFF3F4] !important;
 }
 
 /* Comment Form */
 .comment-form {
-  @apply mt-10 flex items-center gap-4 border-y border-y-dark-4 py-5 max-xs:flex-col !important;
+  @apply mt-10 flex items-center gap-4 border-y border-y-[#C4C3C3] py-5 max-xs:flex-col !important;
 }
 
 .comment-form_btn {

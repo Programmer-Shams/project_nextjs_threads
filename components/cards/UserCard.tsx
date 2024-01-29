@@ -19,7 +19,7 @@ function UserCard({ id, name, username, imgUrl, personType }: Props) {
   const isCommunity = personType === "Community";
 
   return (
-    <article className='user-card'>
+    <article className='user-card shadow-sm border p-3 rounded-md bg-[#EFF3F4]'>
       <div className='user-card_avatar'>
         <div className='relative h-12 w-12'>
           <Image
@@ -48,6 +48,7 @@ function UserCard({ id, name, username, imgUrl, personType }: Props) {
       >
         View
       </Button>
+      {/* <div className='border-b-[#c4c3c3] border-b' /> */}
     </article>
   );
 }

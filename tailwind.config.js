@@ -122,7 +122,7 @@ module.exports = {
         },
       ],
       "small-regular": [
-        "14px",
+        "15px",
         {
           lineHeight: "140%",
           fontWeight: "400",
@@ -173,16 +173,16 @@ module.exports = {
     },
     extend: {
       colors: {
-        "primary-500": "#877EFF",
+        "primary-500": "#017BFF",
         "secondary-500": "#FFB620",
         blue: "#0095F6",
         "logout-btn": "#FF5A5A",
         "navbar-menu": "rgba(16, 16, 18, 0.6)",
-        "dark-1": "#000000",
-        "dark-2": "#121417",
+        "dark-1": "#FFFFFF",
+        "dark-2": "",
         "dark-3": "#101012",
         "dark-4": "#1F1F22",
-        "light-1": "#FFFFFF",
+        "light-1": "",
         "light-2": "#EFEFEF",
         "light-3": "#7878A3",
         "light-4": "#5C5C7B",

@@ -27,13 +27,14 @@ const LeftSidebar = () => {
             <Link
               href={link.route}
               key={link.label}
-              className={`leftsidebar_link ${isActive && "bg-primary-500 "}`}
+              className={`leftsidebar_link ${isActive && "bg-primary-500 text-white"}`}
             >
               <Image
                 src={link.imgURL}
                 alt={link.label}
                 width={24}
                 height={24}
+                className={`${isActive && " fill-black`"}`}
               />
 
               <p className='text-light-1 max-lg:hidden'>{link.label}</p>
@@ -51,9 +52,11 @@ const LeftSidebar = () => {
                 alt='logout'
                 width={24}
                 height={24}
+                className='text-black fill-black'
+                // style={{color: 'black', fill: 'black'}}
               />
 
-              <p className='text-light-2 max-lg:hidden'>Logout</p>
+              <p className='max-lg:hidden font-semibold'>Logout</p>
             </div>
           </SignOutButton>
         </SignedIn>

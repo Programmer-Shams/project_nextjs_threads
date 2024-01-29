@@ -28,7 +28,7 @@ interface Props {
   isComment?: boolean;
 }
 
-function ThreadCard({
+function ThreadCardCom({
   id,
   currentUserId,
   parentId,
@@ -41,7 +41,7 @@ function ThreadCard({
 }: Props) {
   return (
     <article
-      className={`flex w-full flex-col rounded-xl border shadow-md ${
+      className={`flex w-full flex-col rounded-xl ${
         isComment ? "px-0 xs:px-7" : "bg-dark-2 p-7"
       }`}
     >
@@ -58,7 +58,6 @@ function ThreadCard({
             </Link>
 
             <div className='thread-card_bar' />
-            
           </div>
 
           <div className='flex w-full flex-col'>
@@ -123,7 +122,7 @@ function ThreadCard({
           isComment={isComment}
         />
       </div>
-      
+
       {!isComment && comments.length > 0 && (
         <div className='ml-1 mt-3 flex items-center gap-2'>
           {comments.slice(0, 2).map((comment, index) => (
@@ -168,4 +167,4 @@ function ThreadCard({
   );
 }
 
-export default ThreadCard;
+export default ThreadCardCom;

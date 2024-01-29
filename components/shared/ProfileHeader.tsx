@@ -42,7 +42,7 @@ function ProfileHeader({
         </div>
         {accountId === authUserId && type !== "Community" && (
           <Link href='/profile/edit'>
-            <div className='flex cursor-pointer gap-3 rounded-lg bg-dark-3 px-4 py-2'>
+            <div className='flex cursor-pointer gap-3 rounded-lg bg-[#EFF3F4] px-4 py-2'>
               <Image
                 src='/assets/edit.svg'
                 alt='logout'
@@ -50,15 +50,15 @@ function ProfileHeader({
                 height={16}
               />
 
-              <p className='text-light-2 max-sm:hidden'>Edit</p>
+              <p className='max-sm:hidden'>Edit</p>
             </div>
           </Link>
         )}
       </div>
 
-      <p className='mt-6 max-w-lg text-base-regular text-light-2'>{bio}</p>
+      <p className='mt-6 max-w-lg text-base-regular'>{bio}</p>
 
-      <div className='mt-12 h-0.5 w-full bg-dark-3' />
+      <div className='mt-12 h-0.5 w-full bg-[#C4C3C3]' />
     </div>
   );
 }

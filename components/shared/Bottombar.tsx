@@ -16,7 +16,7 @@ function Bottombar() {
           const isActive =
             (pathname.includes(link.route) && link.route.length > 1) ||
             pathname === link.route;
-
+            
           return (
             <Link
               href={link.route}

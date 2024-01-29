@@ -43,7 +43,7 @@ function Searchbar({ routeType }: Props) {
         placeholder={`${
           routeType !== "/search" ? "Search communities" : "Search creators"
         }`}
-        className='no-focus searchbar_input'
+        className='no-focus'
       />
     </div>
   );

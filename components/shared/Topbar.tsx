@@ -30,7 +30,7 @@ function Topbar() {
         <OrganizationSwitcher
           appearance={{
             elements: {
-              organizationSwitcherTrigger: "py-2 px-4 text-white shadow-md rounded-md bg-[#017BFF] hover:bg-[#0069D9] focus:bg-[#0069D9]"
+              organizationSwitcherTrigger: "py-1 px-4 text-white shadow-md rounded-md bg-[#017BFF] hover:bg-[#0069D9] focus:bg-[#0069D9]"
             },
           }}
         />
